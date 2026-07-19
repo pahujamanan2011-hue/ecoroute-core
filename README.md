@@ -17,3 +17,42 @@ Our goal is to provide developers, enterprise businesses, and supply chain manag
 
 ## 🛠️ Architecture Overview
 
+
+
+```
+[Client Application / ERP]
+│
+▼ (FastAPI REST Endpoint)
+[EcoRoute Core Engine]
+│
+┌─────────┴─────────┐
+▼                   ▼
+[Spatial Routing]    [AI Carbon Optimization] ──► [Live Grid & Weather Data]
+```
+
+---
+
+## ⚡ Quick Start
+
+### Prerequisites
+* Python 3.10+
+* Pip (Python package installer)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/ecoroute-core.git](https://github.com/YOUR_USERNAME/ecoroute-core.git)
+   cd ecoroute-core
+
+```
+ 2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   
+   ```
+ 3. Run the live API server:
+   ```bash
+   uvicorn main:app --reload
+   
+   ```
+   The local API will now be interactive and live at http://127.0.0.1:8000/docs
